@@ -270,7 +270,7 @@ uninstall_service() {
 
   echo -e "${GREEN}The sqlite-web service has been uninstalled.${NC}"
 }
-
+clear
 # Main loop for the menu
 while true; do
   show_menu

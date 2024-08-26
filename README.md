@@ -7,6 +7,7 @@ This project is designed to be lightweight and easy to use SQLite-web and can be
 ## 🍀 Features
 
 - Automatically install and configure sqlite-web
+- Generate Random Path to Access SQLite-web (or you can set your own path)
 - Create and manage SQLite databases
 - Browse and edit tables and data
 - Search and filter data
@@ -15,8 +16,10 @@ This project is designed to be lightweight and easy to use SQLite-web and can be
 - Create Service for SQLite-web
 - Secure SQLite-web with SSL/TLS
 
+<br>
+
 > [!IMPORTANT]
-> This repository is a fork of [SQLiteWeb](https://github.com/coleifer/sqlite-web) and modified to work with Marzban's requirements.
+> The Defualt Path of Databse is `/var/lib/marzban/db.sqlite3` and the Default Port is `8010`.
 
 ## 👀 How to Use?
 
