@@ -304,7 +304,7 @@ clear
 # Main script logic
 while true; do
         print ""
-        Print "           Welcome to the SQLite3-Web + MARZBAN setup script."
+        print "           Welcome to the SQLite3-Web + MARZBAN setup script."
         log " ______________________________________________________________"
         print " "         
         success "           @DailyDigtalSKiills  |  GITHUB :@azavaxhuman"

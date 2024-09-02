@@ -26,7 +26,7 @@ This project is designed to be lightweight and easy to use SQLite-web and can be
 just copy/paste and enjoy :
 
 ```bash
-sudo bash -c "$(curl -sL https://raw.githubusercontent.com/Marzban/SQLiteWeb_Marzban/main/install.sh)"
+sudo bash -c "$(curl -sL https://raw.githubusercontent.com/azavaxhuman/SQLiteWeb_Marzban/main/install.sh)"
 ```
 
 ## 📺 Video Tutorial
