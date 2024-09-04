@@ -131,7 +131,7 @@ install_service() {
 ssl_choice=""
 while true; do
     input "Do you want to enable SSL (HTTPS)? (y / n): " ssl_choice
-    if [ "$ssl_choice" == "" || "$ssl_choice" == "y" ]; then
+    if [ "$ssl_choice" == ""] || ["$ssl_choice" == "y" ]; then
         input "Please enter the domain name for the SSL certificate (e.g., example.com): " domain
         input "Please enter the path to the SSL certificate ( e.g /etc/ssl/certs/example.crt ): " SSL_CERT
         input "Please enter the path to the SSL private key ( e.g /etc/ssl/private/example.key ): " SSL_KEY
