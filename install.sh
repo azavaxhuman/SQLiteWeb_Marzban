@@ -130,14 +130,14 @@ install_service() {
     fi
 
 while true; do
-    read -p "Do you want to enable SSL (HTTPS)? (y / n): " ssl_choice
+    input "Do you want to enable SSL (HTTPS)? (y / n): " ssl_choice
     if [ -z "$ssl_choice" ] || [ "$ssl_choice" = "y" ]; then
-        read -p "Please enter the domain name for the SSL certificate (e.g., example.com): " domain
-        read -p "Please enter the path to the SSL certificate (e.g /etc/ssl/certs/example.crt): " SSL_CERT
-        read -p "Please enter the path to the SSL private key (e.g /etc/ssl/private/example.key): " SSL_KEY
+        input "Please enter the domain name for the SSL certificate (e.g., example.com): " domain
+        input "Please enter the path to the SSL certificate (e.g /etc/ssl/certs/example.crt): " SSL_CERT
+        input "Please enter the path to the SSL private key (e.g /etc/ssl/private/example.key): " SSL_KEY
 
         if [ ! -f "$SSL_CERT" ] || [ ! -f "$SSL_KEY" ]; then
-            echo "The SSL certificate or key file does not exist at the specified paths."
+            error "The SSL certificate or key file does not exist at the specified paths."
             continue
         fi
 
@@ -305,7 +305,7 @@ clear
 # Main script logic
 while true; do
         print ""
-        print "           Welcome to the SQLite3-Web + MARZBAN setup script (v1.0)."
+        print "           Welcome to the SQLite3-Web + MARZBAN setup script (v1.1)."
         log " ______________________________________________________________"
         print " "         
         success "           @DailyDigtalSKills  |  GITHUB :@azavaxhuman"
