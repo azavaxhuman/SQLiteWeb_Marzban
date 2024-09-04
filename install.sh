@@ -308,7 +308,7 @@ while true; do
         print "           Welcome to the SQLite3-Web + MARZBAN setup script (v1.0)."
         log " ______________________________________________________________"
         print " "         
-        success "           @DailyDigtalSKiills  |  GITHUB :@azavaxhuman"
+        success "           @DailyDigtalSKills  |  GITHUB :@azavaxhuman"
         print " "
     show_menu
     case $choice in
