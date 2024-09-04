@@ -128,16 +128,16 @@ install_service() {
     else
         input "Please enter a custom URL path (e.g., /sqlite-web): " URL_PATH
     fi
-ssl_choice=""
+
 while true; do
-    input "Do you want to enable SSL (HTTPS)? (y / n): " ssl_choice
-    if [ "$ssl_choice" == ""] || ["$ssl_choice" == "y" ]; then
-        input "Please enter the domain name for the SSL certificate (e.g., example.com): " domain
-        input "Please enter the path to the SSL certificate ( e.g /etc/ssl/certs/example.crt ): " SSL_CERT
-        input "Please enter the path to the SSL private key ( e.g /etc/ssl/private/example.key ): " SSL_KEY
+    read -p "Do you want to enable SSL (HTTPS)? (y / n): " ssl_choice
+    if [ -z "$ssl_choice" ] || [ "$ssl_choice" = "y" ]; then
+        read -p "Please enter the domain name for the SSL certificate (e.g., example.com): " domain
+        read -p "Please enter the path to the SSL certificate (e.g /etc/ssl/certs/example.crt): " SSL_CERT
+        read -p "Please enter the path to the SSL private key (e.g /etc/ssl/private/example.key): " SSL_KEY
 
         if [ ! -f "$SSL_CERT" ] || [ ! -f "$SSL_KEY" ]; then
-            error "The SSL certificate or key file does not exist at the specified paths."
+            echo "The SSL certificate or key file does not exist at the specified paths."
             continue
         fi
 
@@ -148,6 +148,7 @@ while true; do
         break
     fi
 done
+
 
     USER=$(whoami)
     SERVICE_FILE="/etc/systemd/system/sqlite-web.service"
