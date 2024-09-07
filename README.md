@@ -39,4 +39,4 @@ You can find a video tutorial on how to use this repository here.
 
 ## Thanks
 
-Special thanks to erfjab [(SQLiteWeb)](https://github.com/coleifer/sqlite-web)
+Special thanks to SQLiteWeb's creator [(SQLiteWeb)](https://github.com/coleifer/sqlite-web)
