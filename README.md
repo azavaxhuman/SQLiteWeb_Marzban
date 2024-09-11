@@ -1,5 +1,7 @@
 # SQLiteWeb + Marzban
 
+<p align="center"><img style="border-radius: 5%" src="./shot.png" alt="project-image"></p>
+
 ## ⚡ What is it?
 
 This project is designed to be lightweight and easy to use SQLite-web and can be run on the same server where Marzban is installed. This repository is a fork of [SQLiteWeb](https://github.com/coleifer/sqlite-web) and modified to work with [Marzban](https://github.com/Gozargah/Marzban).SQLite-web is a web-based SQLite database browser written in Python using the Flask web framework. It provides a simple and intuitive interface for working with SQLite databases.
